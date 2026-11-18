@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installer l’assistant BLR · CustomsFlow</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #232628; background: #f5f2ed; font: 1rem/1.55 "Segoe UI", system-ui, sans-serif; }
+    header { background: white; border-bottom: 1px solid #e2e2de; }
+    nav { max-width: 1060px; min-height: 62px; margin: auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    a { color: #075f91; text-underline-offset: 3px; }
+    a:hover { color: #003e62; }
+    a:focus-visible { outline: 3px solid #087ba7; outline-offset: 4px; }
+    .brand { display: inline-flex; gap: 8px; align-items: center; text-decoration: none; color: #064875; font-size: 1.4rem; font-style: italic; font-weight: 800; letter-spacing: -.055em; }
+    .mark { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 7px; background: #006cab; color: white; font-style: normal; }
+    main { max-width: 740px; margin: auto; padding: clamp(30px, 6vw, 68px) 18px; }
+    h1 { margin: 0; font-size: clamp(2.3rem, 5.5vw, 3.6rem); letter-spacing: -.055em; line-height: 1.06; text-wrap: balance; }
+    h1 span { color: #006ca4; }
+    .lead { max-width: 52ch; margin: 16px 0 23px; color: #46586b; font-size: 1.1rem; }
+    .download { display: inline-block; padding: 13px 22px; border-radius: 10px; background: linear-gradient(105deg, #00739b, #00549e); color: white; font-weight: 700; text-decoration: none; }
+    .download:hover { background: #005787; color: white; }
+    ol { margin: 32px 0 16px; padding: 22px 28px 22px 53px; border: 1px solid #dce0e0; border-radius: 16px; background: white; }
+    li { padding-left: 5px; }
+    li + li { border-top: 1px solid #e4e9ec; padding-top: 15px; margin-top: 15px; }
+    li::marker { color: #075f91; font-weight: 700; }
+    h2 { margin: 0; font-size: 1.12rem; }
+    li p { margin: 3px 0 0; color: #405468; }
+    code { user-select: all; overflow-wrap: anywhere; font-size: .96em; }
+    .managed { margin: 12px 4px; color: #46586b; font-size: .94rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigation principale">
+      <a class="brand" href="./" aria-label="CustomsFlow, accueil"><span class="mark" aria-hidden="true">↗</span>CustomsFlow</a>
+      <a href="./">Retour à la démo</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Installer <span>l’assistant BLR</span></h1>
+    <p class="lead">Gardez les valeurs de chaque document à côté de votre formulaire et copiez-les depuis le panneau latéral de Chrome sur ordinateur.</p>
+    <a class="download" href="customsflow-assistant-blr.zip" download>Télécharger l’extension (ZIP)</a>
+    <ol>
+      <li>
+        <h2>Extraire le ZIP</h2>
+        <p>Sous Windows, faites un clic droit sur le fichier et choisissez <strong>Extraire tout</strong>. Sur Mac, double-cliquez sur le ZIP. Gardez le dossier obtenu sur l’ordinateur.</p>
+      </li>
+      <li>
+        <h2>Charger l’extension dans Chrome</h2>
+        <p>Dans la barre d’adresse, saisissez <code>chrome://extensions</code>. Activez <strong>Mode développeur</strong>, cliquez sur <strong>Charger l’extension non empaquetée</strong> (<span lang="en">Load unpacked</span>) et sélectionnez le dossier qui contient <code>manifest.json</code>.</p>
+      </li>
+      <li>
+        <h2>Ouvrir un dossier fictif</h2>
+        <p><a href="./">Ouvrez la démonstration</a> ou actualisez son onglet. Dans <strong>Espace transitaire</strong>, connectez-vous, ouvrez un dossier <strong>À examiner</strong> et cliquez sur <strong>Prendre en charge</strong>. Le panneau s’ouvre.</p>
+      </li>
+    </ol>
+    <p class="managed">Si votre entreprise bloque le mode développeur, vous pouvez essayer le panneau sur l’ordinateur équipé du présentateur.</p>
+  </main>
+</body>
+</html>
